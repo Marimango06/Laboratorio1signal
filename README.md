@@ -3,7 +3,8 @@ Este código está diseñado para evaluar diferentes estadísticas descriptivas 
  
 En primera instancia se descargaron los archivos dat. y hat. de una señal fisiológica del banco de datos physionet, esto con el fin de estudiar su comportamiento de la señal, esta se gráfica en python con la ayuda de las librerías  ctypes y  matplotlib.pyplot. La primera para leer los datos de la señal y poder describir sus valores, y la segunda para generar las gráficas pertinentes. Dicho esto podemos ver la señal ECG graficada en python de esta manera:
 
-(imagen señal)
+![image](https://github.com/user-attachments/assets/fdb33ab0-a250-40b1-a5f6-15f9af715537)
+
 
 Posteriormente se inició con el estudio de la señal, calculando la media aritmética, la cual es el promedio de los valores, esta es utilizada para determinar la detección de tendencias, esto para determinar si la señal cambia a lo largo del tiempo y poder tomar acción frente a esta información. Esta estadística se realizó inicialmente con la fórmula matemática (la sumatoria de los valores dividido el total de datos), en segunda instancia se ejecutó una función (mean) de la biblioteca  Numpy de phyton. Dando como resultado 0,085.
 
