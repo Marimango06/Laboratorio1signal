@@ -25,7 +25,8 @@ Como podemos observar, la distribución de este histograma es normal o en forma 
 
 Finalmente tenemos la función de probabilidad, como su nombre indica describe la densidad de probabilidad en un punto específico. Para ello se utilizó la función  PDF de la librería scipy.stats. 
 
-![image](https://github.com/user-attachments/assets/bcf482ec-7d2c-4ac1-a39f-aacca8414d3c)
+![image](https://github.com/user-attachments/assets/40d8983a-5b16-4577-8d5f-7fb43d4e32a0)
+
 
 
 Como podemos observar en la gráfica, se muestra que datos son más probables que ocurran teniendo en cuenta el número de datos. Esto nos permite conocer que valor es más probable que aparezca en la señal que estamos estudiando.
@@ -36,13 +37,11 @@ En esta sección se describirán los tipos de ruidos aplicados en la señal, est
 
 Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones siempre tiene su gráfica similitud con la campana de Gauss, esta se puede observar en eventos de electromagnetismo o radiación, en este caso al ser una señal de corrientes en el corazón se puede este tipo de ruido.
 
-![image](https://github.com/user-attachments/assets/2df03c85-3c33-48b6-a21d-83eb3f009ad1)
+![image](https://github.com/user-attachments/assets/cc265bd6-43b4-4223-a8f9-8e2dfc20fd77)
 
 
-Con respecto al código este ruido se puede variar a partir del cambio de límites de variación aleatoria 
-             ruido_gaussiano = np.random.normal(0.2, 0.4, tamano)
 
-esto se teniendo en cuenta la amplitud de la señal original, ya que esto va a afectar la relación señal-ruido.
+Con respecto al código este ruido se puede variar a partir del cambio de límites de variación aleatoria ruido_gaussiano = np.random.normal(0.2, 0.4, tamano) esto se teniendo en cuenta la amplitud de la señal original, ya que esto va a afectar la relación señal-ruido.
 
 Ruido de impulso: Este tipo de ruido se caracteriza por ser de corta duración y una amplitud muy alta, esto de forma aleatoria en el tiempo, esto al igual que el ruido gaussiano se puede observar en eventos electromagnéticos pero se puede describir en situaciones físicos mecánicos
 
