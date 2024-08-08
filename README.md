@@ -31,17 +31,21 @@ Como podemos observar en la gráfica, se muestra que datos son más probables qu
 Ruido
 En esta sección se describirán los tipos de ruidos aplicados en la señal, estos son: Ruido Gaussiano, Ruido de impulso y Ruido de artefacto.
 
-	Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones siempre tiene su gráfica similitud con la campana de Gauss, esta se puede observar en eventos de electromagnetismo o radiación, en este caso al ser una señal de corrientes en el corazón se puede este tipo de ruido.
-[Imagen de la gráfica]
+Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones siempre tiene su gráfica similitud con la campana de Gauss, esta se puede observar en eventos de electromagnetismo o radiación, en este caso al ser una señal de corrientes en el corazón se puede este tipo de ruido.
+
+![image](https://github.com/user-attachments/assets/2df03c85-3c33-48b6-a21d-83eb3f009ad1)
+
+
 Con respecto al código este ruido se puede variar a partir del cambio de límites de variación aleatoria ruido_gaussiano = np.random.normal(0.2, 0.4, tamano), esto se teniendo en cuenta la amplitud de la señal original, ya que esto va a afectar la relación señal-ruido.
 
-	Ruido de impulso: Este tipo de ruido se caracteriza por ser de corta duración y una amplitud muy alta, esto de forma aleatoria en el tiempo, esto al igual que el ruido gaussiano se puede observar en eventos electromagnéticos pero se puede describir en situaciones físicos mecánicos
+Ruido de impulso: Este tipo de ruido se caracteriza por ser de corta duración y una amplitud muy alta, esto de forma aleatoria en el tiempo, esto al igual que el ruido gaussiano se puede observar en eventos electromagnéticos pero se puede describir en situaciones físicos mecánicos
 
-.[Imagen de la gráfica]
+![image](https://github.com/user-attachments/assets/d224eba1-ee43-4090-8fbe-c9119dbbd203)
+
 
 Este ruido se puede modificar en dos variables, una en la probabilidad de la frecuencia de este ruido pulse probability = 0.001, generando que haya más o menos pulsos según su probabilidad de aparición el cual es afectado por el número de datos a analizar, por otra parte se puede modificar la amplitud de la onda pulse_noise = np.where(random_numbers < pulse_probability, 0.2, 0), como se puede observar la amplitud son los dos números de la línea del código, aumentando o disminuyendo el cambio con respecto a la señal.
 
-	Ruido de artefacto: Se caracteriza por estar en cualquier dispositivo de recolección de señales, esta se pude observar como un impulso único por el método de uso del usuario, o puede ser la resolución del dispositivo.
+Ruido de artefacto: Se caracteriza por estar en cualquier dispositivo de recolección de señales, esta se pude observar como un impulso único por el método de uso del usuario, o puede ser la resolución del dispositivo.
 
 [Imagen de la grafica]
 
