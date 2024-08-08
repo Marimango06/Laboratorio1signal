@@ -1,4 +1,4 @@
-# Laboratorio1signal
+# Laboratorio 1 señales
 Este código está diseñado para evaluar diferentes estadísticas descriptivas de una señal de ECG captada de un banco de datos.
  
 En primera instancia se descargaron los archivos dat. y hat. de una señal fisiológica del banco de datos physionet, donde se registaron el ECG de 28 atletas de alto rendimiento de Noruega, cabe aclarar que cada medicion se tomo en un estado de reposo, para examinar las diferencias anatomicas en el corazón de los atletas, ya que las paredes del ventriculo izquierdo se distiende en comparación con personas que no entrenan deportes.
