@@ -36,7 +36,10 @@ Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones si
 ![image](https://github.com/user-attachments/assets/2df03c85-3c33-48b6-a21d-83eb3f009ad1)
 
 
-Con respecto al código este ruido se puede variar a partir del cambio de límites de variación aleatoria ruido_gaussiano = np.random.normal(0.2, 0.4, tamano), esto se teniendo en cuenta la amplitud de la señal original, ya que esto va a afectar la relación señal-ruido.
+Con respecto al código este ruido se puede variar a partir del cambio de límites de variación aleatoria 
+             ruido_gaussiano = np.random.normal(0.2, 0.4, tamano)
+
+esto se teniendo en cuenta la amplitud de la señal original, ya que esto va a afectar la relación señal-ruido.
 
 Ruido de impulso: Este tipo de ruido se caracteriza por ser de corta duración y una amplitud muy alta, esto de forma aleatoria en el tiempo, esto al igual que el ruido gaussiano se puede observar en eventos electromagnéticos pero se puede describir en situaciones físicos mecánicos
 
