@@ -1,7 +1,8 @@
 # Laboratorio1signal
 Este código está diseñado para evaluar diferentes estadísticas descriptivas de una señal de ECG captada de un banco de datos.
  
-En primera instancia se descargaron los archivos dat. y hat. de una señal fisiológica del banco de datos physionet, esto con el fin de estudiar su comportamiento de la señal, esta se gráfica en python con la ayuda de las librerías  ctypes y  matplotlib.pyplot. La primera para leer los datos de la señal y poder describir sus valores, y la segunda para generar las gráficas pertinentes. Dicho esto podemos ver la señal ECG graficada en python de esta manera:
+En primera instancia se descargaron los archivos dat. y hat. de una señal fisiológica del banco de datos physionet, donde se registaron el ECG de 28 atletas de alto rendimiento de Noruega, cabe aclarar que cada medicion se tomo en un estado de reposo, para examinar las diferencias anatomicas en el corazón de los atletas, ya que las paredes del ventriculo izquierdo se distiende en comparación con personas que no entrenan deportes.
+Esto con el fin de estudiar su comportamiento de la señal, esta se gráfica en python con la ayuda de las librerías  ctypes y  matplotlib.pyplot. La primera para leer los datos de la señal y poder describir sus valores, y la segunda para generar las gráficas pertinentes. Dicho esto podemos ver la señal ECG graficada en python de esta manera:
 
 ![image](https://github.com/user-attachments/assets/fdb33ab0-a250-40b1-a5f6-15f9af715537)
 
