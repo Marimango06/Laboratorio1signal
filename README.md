@@ -35,7 +35,7 @@ Como podemos observar en la gráfica, se muestra que datos son más probables qu
 Ruido
 En esta sección se describirán los tipos de ruidos aplicados en la señal, estos son: Ruido Gaussiano, Ruido de impulso y Ruido de artefacto.
 
-Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones siempre tiene su gráfica similitud con la campana de Gauss, esta se puede observar en eventos de electromagnetismo o radiación, en este caso al ser una señal de corrientes en el corazón se puede este tipo de ruido.
+Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones siempre tiene su gráfica similitud con la campana de Gauss, esta se puede observar en eventos de electromagnetismo o radiación, en este caso al ser una señal de corrientes en el corazón se puede observar este tipo de ruido.
 
 ![image](https://github.com/user-attachments/assets/cc265bd6-43b4-4223-a8f9-8e2dfc20fd77)
 
