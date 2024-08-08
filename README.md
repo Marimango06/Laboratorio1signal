@@ -26,3 +26,26 @@ Finalmente tenemos la función de probabilidad, como su nombre indica describe l
 
 
 Como podemos observar en la gráfica, se muestra que datos son más probables que ocurran teniendo en cuenta el número de datos. Esto nos permite conocer que valor es más probable que aparezca en la señal que estamos estudiando.
+
+
+Ruido
+En esta sección se describirán los tipos de ruidos aplicados en la señal, estos son: Ruido Gaussiano, Ruido de impulso y Ruido de artefacto.
+
+	Ruido Gaussiano: este se describe como un ruido frecuente que sus variaciones siempre tiene su gráfica similitud con la campana de Gauss, esta se puede observar en eventos de electromagnetismo o radiación, en este caso al ser una señal de corrientes en el corazón se puede este tipo de ruido.
+[Imagen de la gráfica]
+Con respecto al código este ruido se puede variar a partir del cambio de límites de variación aleatoria ruido_gaussiano = np.random.normal(0.2, 0.4, tamano), esto se teniendo en cuenta la amplitud de la señal original, ya que esto va a afectar la relación señal-ruido.
+
+	Ruido de impulso: Este tipo de ruido se caracteriza por ser de corta duración y una amplitud muy alta, esto de forma aleatoria en el tiempo, esto al igual que el ruido gaussiano se puede observar en eventos electromagnéticos pero se puede describir en situaciones físicos mecánicos
+
+.[Imagen de la gráfica]
+
+Este ruido se puede modificar en dos variables, una en la probabilidad de la frecuencia de este ruido pulse probability = 0.001, generando que haya más o menos pulsos según su probabilidad de aparición el cual es afectado por el número de datos a analizar, por otra parte se puede modificar la amplitud de la onda pulse_noise = np.where(random_numbers < pulse_probability, 0.2, 0), como se puede observar la amplitud son los dos números de la línea del código, aumentando o disminuyendo el cambio con respecto a la señal.
+
+	Ruido de artefacto: Se caracteriza por estar en cualquier dispositivo de recolección de señales, esta se pude observar como un impulso único por el método de uso del usuario, o puede ser la resolución del dispositivo.
+
+[Imagen de la grafica]
+
+
+Este ruido se puede modificar de dos maneras, uno es la posición donde va a aparecer el ruido transitorio, en esta linea se puede modificar esta ubicación en la gráfica según el tamaño de datos impulse_index = int(0.75* tamano), lo siguiente sería variar la amplitud del ruido este se puede modificar en la siguiente línea impulse_amplitude=2.
+
+Después de la descripción de cada ruido cabe mencionar la importancia de conocer la relación de señal-ruido y la potencia de la señal, el primero describe si la señal es mas fuerte que el ruido o viceversa, esto se puede determinar con el valor resultante de esta operación, si es menor a 1, será más grande el ruido que la señal descrita, si es mayor a uno la señal es más grande que el ruido, el SNR afecta a la potencia de ruido, como se mencionó al ser una función logarítmica, si el valor es menor a 1, la potencia de la señal será negativa, mientras si es mayor a 1, la señal será positiva, cabe mencionar que la potencia es descrita por la unidades de medida “decibeles”, en el codigo para calcular la relación señal-ruido, utilizamos el promedio de los valores aleatorios, para que diera un valor único y no un arreglo matricial.
