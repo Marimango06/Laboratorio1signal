@@ -45,7 +45,8 @@ Con respecto al código este ruido se puede variar a partir del cambio de límit
 
 Ruido de impulso: Este tipo de ruido se caracteriza por ser de corta duración y una amplitud muy alta, esto de forma aleatoria en el tiempo, esto al igual que el ruido gaussiano se puede observar en eventos electromagnéticos pero se puede describir en situaciones físicos mecánicos
 
-![image](https://github.com/user-attachments/assets/d224eba1-ee43-4090-8fbe-c9119dbbd203)
+![image](https://github.com/user-attachments/assets/98be0ccc-bfee-47ed-8397-119e178468fa)
+
 
 
 Este ruido se puede modificar en dos variables, una en la probabilidad de la frecuencia de este ruido pulse probability = 0.001, generando que haya más o menos pulsos según su probabilidad de aparición el cual es afectado por el número de datos a analizar, por otra parte se puede modificar la amplitud de la onda pulse_noise = np.where(random_numbers < pulse_probability, 0.2, 0), como se puede observar la amplitud son los dos números de la línea del código, aumentando o disminuyendo el cambio con respecto a la señal.
