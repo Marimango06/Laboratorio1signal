@@ -47,7 +47,8 @@ Este ruido se puede modificar en dos variables, una en la probabilidad de la fre
 
 Ruido de artefacto: Se caracteriza por estar en cualquier dispositivo de recolección de señales, esta se pude observar como un impulso único por el método de uso del usuario, o puede ser la resolución del dispositivo.
 
-[Imagen de la grafica]
+![image](https://github.com/user-attachments/assets/f537ed0b-deb8-45f3-a652-7f8deaac5d99)
+
 
 
 Este ruido se puede modificar de dos maneras, uno es la posición donde va a aparecer el ruido transitorio, en esta linea se puede modificar esta ubicación en la gráfica según el tamaño de datos impulse_index = int(0.75* tamano), lo siguiente sería variar la amplitud del ruido este se puede modificar en la siguiente línea impulse_amplitude=2.
