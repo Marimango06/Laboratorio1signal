@@ -17,7 +17,8 @@ Adicionalmente se registró el valor porcentual de la relación entre la desviac
 Continuando de esta manera, se obtuvo el histograma de dos maneras diferentes, gracias a la función hist de la librería matplotlib.pyplot., y de manera manual teniendo presente el rango de la señal al igual que los intervalos también llamados bins.
 Esta herramienta gráfica  representa la distribución de un conjunto de datos numéricos mostrando la frecuencia (o la densidad) de los datos agrupados en intervalos (o "bins") a lo largo del eje horizontal. En otras palabras es una herramienta para saber con qué frecuencia se repiten los datos de determinados intervalos. Esta gráfica se visualiza a continuación. 
 
-![image](https://github.com/user-attachments/assets/dde794d4-8ccd-4878-9a78-9bb690e82fd5)
+![image](https://github.com/user-attachments/assets/c0ff69f4-0d6d-423e-a8f5-d936a54efa3b)
+
 
 
 Como podemos observar, la distribución de este histograma es normal o en forma de campana de Gauss, esto quiere decir que los valores están más próximos a la media de la señal. 
