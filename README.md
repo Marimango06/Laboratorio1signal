@@ -60,3 +60,9 @@ Ruido de artefacto: Se caracteriza por estar en cualquier dispositivo de recolec
 Este ruido se puede modificar de dos maneras, uno es la posición donde va a aparecer el ruido transitorio, en esta linea se puede modificar esta ubicación en la gráfica según el tamaño de datos impulse_index = int(0.75* tamano), lo siguiente sería variar la amplitud del ruido este se puede modificar en la siguiente línea impulse_amplitude=2.
 
 Después de la descripción de cada ruido cabe mencionar la importancia de conocer la relación de señal-ruido y la potencia de la señal, el primero describe si la señal es mas fuerte que el ruido o viceversa, esto se puede determinar con el valor resultante de esta operación, si es menor a 1, será más grande el ruido que la señal descrita, si es mayor a uno la señal es más grande que el ruido, el SNR afecta a la potencia de ruido, como se mencionó al ser una función logarítmica, si el valor es menor a 1, la potencia de la señal será negativa, mientras si es mayor a 1, la señal será positiva, cabe mencionar que la potencia es descrita por la unidades de medida “decibeles”, en el codigo para calcular la relación señal-ruido, utilizamos el promedio de los valores aleatorios, para que diera un valor único y no un arreglo matricial.
+
+Instrucciones:
+Para agregar la señal que se desea:
+signal = wfdb.rdrecord ('señal deseada')
+
+
